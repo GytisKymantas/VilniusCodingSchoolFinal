@@ -1,0 +1,53 @@
+h2 {
+  font-size: 2.5rem;
+  color: orange;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 1rem;
+  color: orange;
+  margin-top: 1rem;
+}
+
+$color-gray-background: rgb(49, 47, 47);
+
+$color-white: white;
+$color-orange: orange;
+$color-black: black;
+$color-gray: rgba(126, 103, 103, 0.55);
+
+$color-dynamic-one: rgba(48, 51, 39, 0.616);
+$color-dynamic-two: rgba(41, 29, 29, 0.55);
+
+$box-shadow: 0 0 1rem rgba(48, 42, 42, 0.829);
+$box-shadow-yellow: 0 0 1rem rgb(250, 234, 5);
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(0rem);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(0rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

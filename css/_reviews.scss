@@ -1,0 +1,190 @@
+// REVIEWS TRAINER SECTION
+.reviews {
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+
+  // background-image: /* top, transparent red */ linear-gradient(
+  //   rgba(48, 51, 39, 0.616),
+  //   rgba(41, 29, 29, 0.55)
+  // );
+  // background-size: cover;
+  // background-position: contain;
+  // box-shadow: 0 0 1rem rgba(48, 42, 42, 0.829);
+
+  &__header {
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  &__container {
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 10rem;
+
+    & ion-icon {
+      color: $color-orange;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+    .holder-1 {
+      background-color: $color-gray;
+      // transform: skewX(-12deg);
+      width: 26rem;
+
+      & img {
+        // transform: skewX(12deg);
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+      }
+
+      & p {
+        background-color: $color-orange;
+        color: $color-black;
+      }
+    }
+    .holder-image {
+      display: flex;
+      justify-content: center;
+    }
+    &-holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &-text {
+      color: $color-orange;
+      font-size: 5rem;
+      text-transform: uppercase;
+      margin-top: 6rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    &-faces {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    &-info {
+      list-style-type: none;
+      font-size: 1rem;
+      word-spacing: 0.2rem;
+      color: $color-white;
+      text-transform: uppercase;
+      line-height: 2rem;
+      margin: 2em;
+    }
+  }
+}
+
+// REVIEWS TRAINER SECTION
+.reviews {
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+
+  // background-image: /* top, transparent red */ linear-gradient(
+  //   rgba(48, 51, 39, 0.616),
+  //   rgba(41, 29, 29, 0.55)
+  // );
+  // background-size: cover;
+  // background-position: contain;
+  // box-shadow: 0 0 1rem rgba(48, 42, 42, 0.829);
+
+  &__header {
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  &__container {
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 10rem;
+
+    & ion-icon {
+      color: $color-orange;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+    .holder-1 {
+      background-color: $color-gray;
+      // transform: skewX(-12deg);
+      width: 26rem;
+
+      & img {
+        // transform: skewX(12deg);
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+      }
+
+      & p {
+        background-color: $color-orange;
+        color: $color-black;
+      }
+    }
+    .holder-image {
+      display: flex;
+      justify-content: center;
+    }
+    &-holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &-text {
+      color: $color-orange;
+      font-size: 5rem;
+      text-transform: uppercase;
+      margin-top: 6rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    &-faces {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    &-info {
+      list-style-type: none;
+      font-size: 1rem;
+      word-spacing: 0.2rem;
+      color: $color-white;
+      text-transform: uppercase;
+      line-height: 2rem;
+      margin: 2em;
+    }
+  }
+}
+
+body .sticky .header__list {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: $color-dynamic-one;
+  height: 10%;
+  opacity: 0.3;
+  box-shadow: $box-shadow;
+}

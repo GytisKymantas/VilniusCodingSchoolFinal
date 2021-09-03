@@ -1,0 +1,22 @@
+.purchases__header {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+.purchases__container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  &-1 {
+    border: solid 0.2rem gray;
+    padding: 2rem;
+  }
+  &-price {
+    display: flex;
+    justify-content: center;
+  }
+  &-header {
+    font-size: 2rem;
+    text-align: center;
+  }
+}

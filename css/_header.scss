@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: "Bebas Neue", cursive;
+  font-size: 62.5%;
+
+  // only if there is nothing absolutely position in relation to body;
+  overflow-x: hidden;
+}
+body {
+  padding-top: 0rem;
+  padding-right: 2rem;
+  padding-bottom: 0rem;
+  padding-left: 2rem;
+  background-color: $color-gray-background;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+.mainas {
+  // background-image: linear-gradient(
+  //     rgba(82, 79, 79, 0.55),
+  //     rgba(82, 79, 79, 0.55),
+  //     rgba(146, 132, 132, 0.55)
+  //   ),
+  background-image: url(images/MainExample.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: -1;
+
+  &__list {
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    color: $color-white;
+    font-size: 2rem;
+    list-style-type: none;
+
+    li {
+      margin-bottom: 0.2rem;
+      margin-right: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    li > ion-icon {
+      color: $color-orange;
+    }
+  }
+
+  &__header {
+    // position: absolute;
+    top: 50%;
+    left: 70%;
+    position: absolute;
+    font-family: "Bebas Neue", cursive;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    color: $color-white;
+  }
+  &__header-1 {
+    @extend .mainas__header;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+  }
+}
+
+// *** separation gap ***
+// *** separation gap ***
+// *** separation gap ***
+// *** separation gap ***
+.header {
+  position: relative;
+  opacity: 0.7;
+  // width: 100%;
+  // margin-left: -2rem;
+  // position: absolute;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  z-index: 232;
+  color: $color-white;
+
+  // font-size: 1rem;
+
+  // background-size: cover;
+  box-shadow: $box-shadow;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0.7;
+    width: 100%;
+    position: absolute;
+    z-index: 4234;
+  }
+  .header__list {
+    background: black;
+    &-1 {
+      & a {
+        text-decoration: none;
+        color: $color-white;
+
+        &:hover {
+          background-color: $color-white;
+          color: $color-black;
+        }
+      }
+    }
+  }
+  &__login-1 {
+    & ion-icon {
+      color: $color-orange;
+      margin-left: 0.3rem;
+    }
+
+    & .SignUp {
+      color: $color-white;
+      height: 0.1rem;
+
+      margin-left: 1rem;
+      z-index: 1;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-black;
+      }
+    }
+    & .LogIn {
+      color: $color-white;
+      text-decoration: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    align-content: center;
+
+    & > * {
+      margin-right: 2rem;
+
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $color-black;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

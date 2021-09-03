@@ -1,0 +1,98 @@
+.image__container {
+  display: flex;
+  justify-content: center;
+  height: 20rem;
+
+  & > * {
+    width: 30%;
+    height: 100%;
+    transition: all 0.2s;
+
+    // display:absolute;
+    // top: 20%;
+    // left:50%;
+    // transform: translate(-50%, -50%);
+  }
+  &-1 {
+    transform: scaleY(0.9);
+    transform: scaleX(1);
+
+    &:hover {
+      transform: scaleY(1.1);
+    }
+  }
+  &-2 {
+    transform: scaleY(1);
+
+    &:hover {
+      transform: scaleY(1.2);
+    }
+  }
+  &-3 {
+    transform: scaleY(0.9);
+    transform: scaleX(1);
+    &:hover {
+      transform: scaleY(1.1);
+    }
+  }
+}
+.purchase__container {
+  display: grid;
+  grid-template-columns: 26rem 26rem 26rem;
+  justify-content: center;
+
+  height: 70%;
+  gap: 5rem;
+
+  &-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient($color-dynamic-one, $color-dynamic-two),
+      url(images/hazard2-min.jpg);
+    border: solid 0.2rem none;
+    box-shadow: $box-shadow;
+  }
+
+  &-price {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: white;
+  }
+  &-header {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+  }
+  &-bigList {
+    margin-top: 3.5rem;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+  }
+
+  &-list {
+    list-style-type: none;
+    text-align: justify;
+  }
+}
+.purchase__Btncontainer {
+  margin-top: 3rem;
+  background: black;
+  padding: 1rem;
+  & a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  & a:hover {
+    color: black;
+    background: white;
+  }
+}
+.purchases__header {
+  font-size: 7rem;
+}

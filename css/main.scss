@@ -1,0 +1,205 @@
+@import "variables";
+@import "header";
+@import "queries";
+@import "mobile";
+@import "mobnav";
+@import "footer";
+@import "content";
+@import "form";
+@import "subscriptions";
+@import "gallery";
+@import "reviews";
+@import "newsletter";
+@import "signup";
+@import "policy";
+@import "subplans";
+@import "purchases";
+
+// Noreciau jog butu visa sita _queries.scss folderyje, taciau kazkoks bugas traktuoja sita identiska koda ne taip kaip noriu,
+// todel palieku cia main.scss nes tik sitaip man veikia
+@media only screen and (max-width: 915px) {
+  html {
+    font-size: 50%;
+  }
+  .inputsBtn {
+    font-size: 3rem;
+    margin-top: 0.2rem;
+  }
+  .inputsSign {
+    font-size: 2rem;
+    margin-top: 9px !important;
+  }
+
+  .footer-list {
+    width: 100% !important;
+  }
+  .footer__list-anchor {
+    font-size: 2rem;
+  }
+  .mainas {
+    background-size: cover;
+
+    &__list {
+      left: 1;
+    }
+  }
+  .icons__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1rem;
+
+    &-1 {
+      display: flex;
+      justify-content: space-around;
+      & ion-icon {
+        font-size: 5rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .gallery__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .holder-1 {
+    background-color: $color-gray;
+    // transform: skewX(-12deg);
+
+    & img {
+      // transform: skewX(12deg);
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+  }
+  .reviews__container {
+    grid-template-columns: 1fr;
+    // margin-bottom: 15rem;
+  }
+  .btn-mobile-nav {
+    display: block !important;
+  }
+
+  .negerai {
+    width: 26rem;
+  }
+  .header__login {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+  }
+  .header__list {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1) !important;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4.8rem;
+    font-size: 3rem;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.2s;
+
+    // transform: translateX(100%);
+
+    pointer-events: none;
+    visibility: hidden;
+
+    &-1 {
+      & a {
+        text-decoration: none;
+        color: $color-white;
+
+        &:hover {
+          color: transparent;
+        }
+      }
+    }
+  }
+  .reviews {
+    height: 150rem;
+  }
+
+  .nav-open .header__list {
+    opacity: 1;
+
+    transition: all 0.5s;
+    // transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .header__list {
+    &-1 {
+      & a {
+        text-decoration: none;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  html {
+    font-size: 45%;
+  }
+  .inputsSign {
+    margin-top: 7.5px !important;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 35%;
+  }
+  .gallery__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .inputsBtn {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+  }
+  .inputsSign {
+    margin-top: 6px !important;
+    font-size: 2rem !important;
+  }
+
+  .icons {
+    margin-bottom: 7rem;
+  }
+  .main_contentLeft {
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  html {
+    font-size: 25%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  html {
+    font-size: 20%;
+  }
+}

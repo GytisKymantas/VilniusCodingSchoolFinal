@@ -1,0 +1,47 @@
+.policy__container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 3rem;
+
+  & h1 {
+    font-size: 5rem;
+    color: black;
+    text-align: center;
+  }
+
+  &-hr {
+    width: 6rem;
+    margin-top: -3rem;
+  }
+  & h1 {
+    font-size: 5rem;
+  }
+  & p {
+    font-size: 2rem;
+  }
+
+  & ul {
+    font-size: 1.5rem;
+  }
+}
+
+.policy__container {
+  margin-top: 5rem;
+  & ul {
+    color: $color-white;
+    list-style-type: none;
+  }
+  & h2 {
+    text-align: center;
+  }
+}
+
+.policy__list {
+  display: flex;
+}
+.policy__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
